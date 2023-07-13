@@ -19,5 +19,8 @@ function changeText() {
     element.innerHTML = "Text has been changed!";
     isTextChanged = true;
   }
-
 }
+  
+
+
+
