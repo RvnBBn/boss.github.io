@@ -55,3 +55,8 @@ h1 {
   .arrow-down {
     font-size: 24px;
   }
+  .dont-allign
+  {
+    color: red;
+    font-size: 50px;
+  }
