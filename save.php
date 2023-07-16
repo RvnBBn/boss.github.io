@@ -1,13 +1,19 @@
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // Retrieve form data
-  $name = $_POST["name"];
-  $email = $_POST["email"];
-  $message = $_POST["message"];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
 
-  // Process the data or perform necessary actions
-  // ...
+// Create a string with the form data
+$data = "Name: $name\nEmail: $email\nMessage: $message\n\n";
 
-  // Redirect or display a success message
-  header("Location: success.html");
-  exit();
+// Define the path to the text file
+$filePath = 'form_data.txt';
+
+// Open the file in append mode and write the data
+$file = fopen($filePath, 'a');
+if ($file) {
+    fwrite($file, $data);
+    fclose($file);
+    echo 'Form submitted successfully!';
+} else {
+    echo 'Unable to open file.';
 }
