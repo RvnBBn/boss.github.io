@@ -1,5 +1,5 @@
 
-  var originalText = "<a>Click the button to change this text.</a>";
+  var originalText = "<a href>Click the button to change this text.</a>";
 var isTextChanged = false;
 
 function changeText() {
@@ -16,7 +16,7 @@ function changeText() {
     
   } else {
     element1.innerHTML="HATz"
-    element.innerHTML = "<a>Text has been changed!</a>";
+    element.innerHTML = "<a href>Text has been changed!</a>";
     isTextChanged = true;
   }
 }
