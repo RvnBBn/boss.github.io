@@ -74,8 +74,8 @@ p {
 
     .oval {
       color:black;
-      width: 1000px;
-      height: 1000px;
+      width: 450px;
+      height: 50px;
       background-color: #e74c3c;
       border-radius: 50%;
       margin: 10px;
